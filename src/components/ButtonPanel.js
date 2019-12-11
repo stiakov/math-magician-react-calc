@@ -4,35 +4,35 @@ import { Button } from './Button';
 export class ButtonPanel extends React.Component {
   render() {
     return (
-      <div>
-        <div>
-          <Button id='AC' />
-          <Button id='+/-' />
-          <Button id='%' />
-          <Button id='/' />
+      <div id='panel'>
+        <div class='row'>
+          <Button name='AC' />
+          <Button name='+/-' />
+          <Button name='%' />
+          <Button name='/' color={ true } />
         </div>
-        <div>
-          <Button id='7' />
-          <Button id='8' />
-          <Button id='9' />
-          <Button id='X' />
+        <div class='row'>
+          <Button name='7' />
+          <Button name='8' />
+          <Button name='9' />
+          <Button name='x' color={ true } />
         </div>
-        <div>
-          <Button id='4' />
-          <Button id='5' />
-          <Button id='6' />
-          <Button id='–' />
+        <div class='row'>
+          <Button name='4' />
+          <Button name='5' />
+          <Button name='6' />
+          <Button name='–' color={ true } />
         </div>
-        <div>
-          <Button id='1' />
-          <Button id='2' />
-          <Button id='3' />
-          <Button id='+' />
+        <div class='row'>
+          <Button name='1' />
+          <Button name='2' />
+          <Button name='3' />
+          <Button name='+' color={ true } />
         </div>
-        <div>
-          <Button id='.' />
-          <Button id='0' />
-          <Button id='=' />
+        <div class='row'>
+          <Button name='0' wide={ true } />
+          <Button name='.' />
+          <Button name='=' color={ true }/>
         </div>
       </div>
     )
