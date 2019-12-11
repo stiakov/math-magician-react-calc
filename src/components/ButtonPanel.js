@@ -32,7 +32,7 @@ export class ButtonPanel extends React.Component {
         <div className='row'>
           <Button name='0' wide={ true } />
           <Button name='.' />
-          <Button name='=' color={ true }/>
+          <Button name='=' color={ true } />
         </div>
       </div>
     )
