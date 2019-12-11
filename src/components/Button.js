@@ -12,4 +12,8 @@ export const Button = ({ name, color, wide }) => {
   return <button style={ styles } >{ name }</button>
 };
 
-Button.propTypes = { name: PropTypes.string.isRequired };
+Button.propTypes = { 
+  name: PropTypes.string.isRequired,
+  wide: PropTypes.bool,
+  color: PropTypes.bool,
+ };
