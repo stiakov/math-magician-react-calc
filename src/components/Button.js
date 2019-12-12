@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+const orange = '#f6913f';
 
 export const Button = ({ name, color, wide }) => {
-  const orange = '#f6913f';
-  const clearGrey = '#e0e0e0';
   const styles = {
-    backgroundColor: color ? orange : clearGrey,
+    backgroundColor: color,
     width: wide ? '50%' : '25%',
     height: '100px',
   }
@@ -17,3 +16,5 @@ Button.propTypes = {
   wide: PropTypes.bool,
   color: PropTypes.bool,
  };
+
+ Button.defaultProps = { wide: false, color: orange };
