@@ -3,36 +3,37 @@ import { Button } from './Button';
 
 export class ButtonPanel extends React.Component {
   render() {
+    const clearGrey = '#e0e0e0';
     return (
-      <div>
-        <div>
-          <Button id='AC' />
-          <Button id='+/-' />
-          <Button id='%' />
-          <Button id='/' />
+      <div id='panel'>
+        <div className='row'>
+          <Button name='AC' color={ clearGrey } />
+          <Button name='+/-' color={ clearGrey } />
+          <Button name='%' color={ clearGrey } />
+          <Button name='/' />
         </div>
-        <div>
-          <Button id='7' />
-          <Button id='8' />
-          <Button id='9' />
-          <Button id='X' />
+        <div className='row'>
+          <Button name='7' color={ clearGrey } />
+          <Button name='8' color={ clearGrey } />
+          <Button name='9' color={ clearGrey } />
+          <Button name='x' />
         </div>
-        <div>
-          <Button id='4' />
-          <Button id='5' />
-          <Button id='6' />
-          <Button id='–' />
+        <div className='row'>
+          <Button name='4' color={ clearGrey } />
+          <Button name='5' color={ clearGrey } />
+          <Button name='6' color={ clearGrey } />
+          <Button name='–' />
         </div>
-        <div>
-          <Button id='1' />
-          <Button id='2' />
-          <Button id='3' />
-          <Button id='+' />
+        <div className='row'>
+          <Button name='1' color={ clearGrey } />
+          <Button name='2' color={ clearGrey } />
+          <Button name='3' color={ clearGrey } />
+          <Button name='+' />
         </div>
-        <div>
-          <Button id='.' />
-          <Button id='0' />
-          <Button id='=' />
+        <div className='row'>
+          <Button name='0' color={ clearGrey } wide={ true } />
+          <Button name='.' color={ clearGrey } />
+          <Button name='=' />
         </div>
       </div>
     )
