@@ -5,8 +5,10 @@ import { calculate } from '../logic/calculate';
 
 
 export default class App extends React.Component {
-  state = { total: "0", next: "0", operation: "", displayed: false };
-  
+  constructor(props) {
+    super(props);
+    this.state = { total: "0", next: "0", operation: "", displayed: false };
+  }
   handleClick(buttonName) {
     this.setState(calculate(this.state, buttonName));
   }
