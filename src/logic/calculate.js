@@ -26,7 +26,7 @@ export const calculate = ({ total, next, operation, displayed }, btnName) => {
       
     case "/":
     case "x":
-    case "-":
+    case "–":
     case "+":
     case '%':
       displayed = true;
